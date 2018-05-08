@@ -47,3 +47,6 @@ CREATE TABLE cliente(
 USE aula_09;
 
 ALTER TABLE cliente ADD COLUMN CPF varchar(14) NOT NULL UNIQUE AFTER Nome 
+
+
+

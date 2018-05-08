@@ -18,3 +18,5 @@ Funções do PHP (mySQL)
 
 ----------------------------
 -mysqli_query()
+
+
