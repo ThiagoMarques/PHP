@@ -1,0 +1,49 @@
+Nome do Banco de Dados: aula_09
+Criar um Sistema de Cadastro de Clientes
+
+- Nome da Tabela: cliente 
+*nunca no plural
+
+- Número de Colunas: 13 pois uma seria da chave primária
+*Criar chave primária por conta da cardinalidade
+*Para PK, o valor não pode ser nulo (not null), obrigatório
+---------------------------------------------------------------------
+COD OU ID_Cliente:  (int(11)) CHAVE PRIMÁRIA AUTO_INCREMENT
+1. CPF: 000.000.000-00 (varchar(14) ou int(11))
+2. Nome: (varchar(120))
+3. E-mail: (varchar(100))
+4. Endereço: (varchar(255))
+5. Telefone: (xx) 00000-0000 (varchar(15))
+6. Estado Civil: (varchar(20))
+7. Número de Dependentes: (int(2))
+8. Renda Mensal: (float)
+9. Data de Nascimento: (date (aaa-mm-dd)
+10. Gênero: (char(1))
+11. UF: (char(2))
+12. Cidade: (varchar(30))
+---------------------------------------------------------------------
+
+Operações
+
+1. Criar banco de dados: CREATE DATABASE 'nomebanco' ; cláusula IF NOT EXISTS
+2. Apagar banco de dados: DROP DATABASE 'nomebanco' 
+3. Alterar um banco, como renomear, adicionar algo... : ALTER DATABASE 'nomebanco' + comando desejado (RENAME por exemplo)
+4. Usar o banco, selecionar o banco: USE 'nomebanco' + comando desejado (CREATE por exemplo...)
+
+USE aula_09;
+
+CREATE TABLE cliente(
+	ID_Cliente int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+        Nome varchar(120) NOT NULL,
+        [...]
+        Cidade varchar(30) NOT NULL    
+)
+
+
+5. Apagar tabela: DROP TABLE 'nometabela'
+6. Aceitar somente um dado sem repetição: UNIQUE
+7. Acrescentar uma tabela:
+
+USE aula_09;
+
+ALTER TABLE cliente ADD COLUMN CPF varchar(14) NOT NULL UNIQUE AFTER Nome 

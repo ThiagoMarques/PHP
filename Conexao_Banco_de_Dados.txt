@@ -1,0 +1,20 @@
+Criar novo projeto
+Nome Projeto
+c:\lampp\htdcos\09_PHP
+
+----------------------------------------------------------------
+
+Parâmetros de Configuração do Servidor
+HOST = localhost ou 127.0.0.1
+USER = root
+PASS = 
+PORT = 3306
+DBNAME = aula_09
+
+Funções do PHP (mySQL)
+-mysqli_connect()
+-mysqli_select_db()
+-mysqli_close()
+
+----------------------------
+-mysqli_query()
